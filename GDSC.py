@@ -58,4 +58,3 @@ for i in range(len(ans)):
         ans1+=ans[i]
 
 print("answer is ",ans1)
-
