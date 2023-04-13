@@ -46,9 +46,16 @@ for i,j in d.items():
     if(j==0):
         continue
     else:
-        ans+=str(j)+str(i)+' + '
+        ans+=str(j)+str(i)+'+'
         
-ans=ans[:len(ans)-2]
+ans=ans[:len(ans)-1]
 
-print("answer is ",ans)
-# 2x**2-3x**2+x
+ans1=''
+for i in range(len(ans)):
+    if(ans[i]=='+' and ans[i+1]=='-'):
+        ans1+=''
+    else:
+        ans1+=ans[i]
+
+print("answer is ",ans1)
+
